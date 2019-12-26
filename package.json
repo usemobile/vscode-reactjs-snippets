@@ -1,0 +1,53 @@
+{
+  "name": "UsemobileReactJS",
+  "version": "1.0.1",
+  "publisher": "usemobile",
+  "displayName": "Usemobile ReactJS Snippets",
+  "icon": "images/usemobile.png",
+  "description": "ReactJS snippets by Usemobile",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usemobile/vscode-reactjs-snippets.git"
+  },
+  "keywords": [
+    "vscode",
+    "reactjs",
+    "snippets"
+  ],
+  "galleryBanner": {
+    "color": "#30729D",
+    "theme": "dark"
+  },
+  "author": "Highlander Paiva <highlander.vilela@usemobile.xyz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/usemobile/vscode-reactjs-snippets/issues"
+  },
+  "homepage": "https://github.com/usemobile/vscode-reactjs-snippets#readme",
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/snippets.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}

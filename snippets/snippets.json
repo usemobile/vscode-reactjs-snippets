@@ -1,0 +1,91 @@
+{
+  "component": {
+    "prefix": "rc",
+    "body": [
+      "import React, { memo } from 'react';",
+      "",
+      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => (",
+      "  <div className=\"${TM_DIRECTORY} -> ${TM_DIRECTORY/(^[A-Z][a-z]*|[a-z])([A-Z])?/${1:/downcase}${2:+-}${2:/downcase}/g}\">",
+      "    {/** TODO: compose the component */}",
+      "  </div>",
+      ");",
+      "",
+      "export default memo(${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}});"
+    ],
+    "description": "Create ReactJS Component"
+  },
+
+  "componentStateless": {
+    "prefix": "rsc",
+    "body": [
+      "import React, { memo } from 'react';",
+      "",
+      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => {",
+      "  console.log('stateless componnet');",
+      "",
+      "  return (",
+      "    <div className=\"${TM_DIRECTORY} -> ${TM_DIRECTORY/(^[A-Z][a-z]*|[a-z])([A-Z])?/${1:/downcase}${2:+-}${2:/downcase}/g}\">",
+      "      {/** TODO: compose the component */}",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default memo(${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}});",
+      ""
+    ],
+    "description": "Create ReactJS Stateless Component"
+  },
+
+  "styles": {
+    "prefix": "rc-styled",
+    "body": [
+      "import styled from 'styled-components';",
+      "",
+      "export const ${1:Container} = styled.${2:div}`",
+      "  ${3}",
+      "`;",
+      ""
+    ],
+    "description": "Create ReactJS Styled Components file"
+  },
+
+  "reactReducer": {
+    "prefix": "rc-reducer",
+    "body": [
+      "import produce from 'immer';",
+      "",
+      "export const initialState = {};",
+      "",
+      "const reducer = (state = initialState, action) =>",
+      "  produce(state, draft => {",
+      "    switch (actions.type) {}",
+      "  });",
+      "",
+      "export default reducer;",
+      ""
+    ],
+    "description": "Create reducer index.js file"
+  },
+
+  "reactSaga": {
+    "prefix": "rc-saga",
+    "body": [
+      "import { call, put, takeLatest } from 'redux-saga/effects';",
+      "import { FETCH } from './constants';",
+      "",
+      "export function* load() {",
+      "  try {",
+      "    yield put();",
+      "  } catch (err) {",
+      "    yield put();",
+      "  }",
+      "}",
+      "",
+      "export default function* indexSaga() {",
+      "  yield takeLatest(FETCH, load);",
+      "}",
+      ""
+    ],
+    "description": "Create Sagas index.js file"
+  }
+}
