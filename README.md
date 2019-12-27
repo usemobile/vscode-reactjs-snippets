@@ -25,8 +25,8 @@ Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada 
 
 |                    Gatilho | Conteúdo                                                                      |
 | -------------------------: | ----------------------------------------------------------------------------- |
-|                     `urc →` | Cria um Componente **Stateless** enxuto                                      |
-|                    `ursc →` | Cria um Componente **Stateless**                                             |
+|                     `urc →` | Cria um Componente com apenas o retorno do render                            |
+|                    `urco →` | Cria um Componente com espaço para operações e funções                       |
 |              `urc-styled →` | Cria um arquivo de Estilização com **Styled Components**                     |
 |             `urc-reducer →` | Cria o arquivo de reducer                                                    |
 |                `urc-saga →` | Cria o arquivo de Sagas                                                      |

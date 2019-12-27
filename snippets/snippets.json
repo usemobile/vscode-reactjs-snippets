@@ -15,8 +15,8 @@
     "description": "Create ReactJS Component"
   },
 
-  "componentStateless": {
-    "prefix": "ursc",
+  "componentWithOperation": {
+    "prefix": "urco",
     "body": [
       "import React, { memo } from 'react';",
       "",
@@ -33,7 +33,7 @@
       "export default memo(${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}});",
       ""
     ],
-    "description": "Create ReactJS Stateless Component"
+    "description": "Create ReactJS Component with operation"
   },
 
   "styles": {

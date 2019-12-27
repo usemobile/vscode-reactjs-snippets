@@ -8,11 +8,10 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - run: npm install
+      - uses: lannonbr/vsce-action@master
         with:
-          node-version: 12
-      - run: yarn
-      - run: yarn global add vsce
-      - run: vsce package
-      - run: vsce publish -p ${{secrets.VSCODE_TOKEN}}
+          args: "publish -p $VSCODE_TOKEN"
+        env:
+          VSCODE_TOKEN: ${{ secrets.VSCODE_TOKEN }}
