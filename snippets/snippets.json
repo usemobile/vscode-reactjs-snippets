@@ -1,6 +1,6 @@
 {
   "component": {
-    "prefix": "rc",
+    "prefix": "urc",
     "body": [
       "import React, { memo } from 'react';",
       "",
@@ -16,7 +16,7 @@
   },
 
   "componentStateless": {
-    "prefix": "rsc",
+    "prefix": "ursc",
     "body": [
       "import React, { memo } from 'react';",
       "",
@@ -37,7 +37,7 @@
   },
 
   "styles": {
-    "prefix": "rc-styled",
+    "prefix": "urc-styled",
     "body": [
       "import styled from 'styled-components';",
       "",
@@ -50,7 +50,7 @@
   },
 
   "reactReducer": {
-    "prefix": "rc-reducer",
+    "prefix": "urc-reducer",
     "body": [
       "import produce from 'immer';",
       "",
@@ -68,7 +68,7 @@
   },
 
   "reactSaga": {
-    "prefix": "rc-saga",
+    "prefix": "urc-saga",
     "body": [
       "import { call, put, takeLatest } from 'redux-saga/effects';",
       "import { FETCH } from './constants';",

@@ -1,6 +1,6 @@
-![GitHub](https://img.shields.io/github/license/usemobile/vscode-reactjs-snippets.svg)
+# ![logo](images/usemobile.png) Usemobile VSCode React Snippets
 
-<!-- ABOUT THE PROJECT -->
+![GitHub](https://img.shields.io/github/license/usemobile/vscode-reactjs-snippets.svg)
 
 ## Sobre o Projeto
 
@@ -25,11 +25,11 @@ Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada 
 
 |                    Gatilho | Conteúdo                                                                      |
 | -------------------------: | ----------------------------------------------------------------------------- |
-|                     `rc →` | Cria um Componente **Stateless** enxuto                                       |
-|                    `rsc →` | Cria um Componente **Stateless**                                              |
-|              `rc-styled →` | Cria um arquivo de Estilização com **Styled Components**                      |
-|             `rc-reducer →` | Cria o arquivo de reducer                                                     |
-|                `rc-saga →` | Cria o arquivo de Sagas                                                       |
+|                     `urc →` | Cria um Componente **Stateless** enxuto                                      |
+|                    `ursc →` | Cria um Componente **Stateless**                                             |
+|              `urc-styled →` | Cria um arquivo de Estilização com **Styled Components**                     |
+|             `urc-reducer →` | Cria o arquivo de reducer                                                    |
+|                `urc-saga →` | Cria o arquivo de Sagas                                                      |
 
 
 <!-- LICENSE -->
